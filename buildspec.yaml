@@ -4,8 +4,9 @@ phases:
   install:
     commands:
       - echo installing nodejs...
-      - curl -sL https://deb.nodesource.com/setup_18.x | bash -
-      - apt-get install -y nodejs  #aws code build use ubuntu environement
+      - curl -sL https://deb.nodesource.com/setup_14.x 565 | sudo -E bash
+      - sudo apt-get install -y nodejs
+  #aws code build use ubuntu environement
   pre_build:
     commands:
       - echo installing dependencies...
