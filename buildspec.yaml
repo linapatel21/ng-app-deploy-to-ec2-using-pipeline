@@ -9,6 +9,7 @@ phases:
   pre_build:
     commands:
       - echo installing dependencies...
+      - npm cache clean --force
       - npm i -g @angular/cli
       - npm install
   build:
